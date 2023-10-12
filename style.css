@@ -1,0 +1,257 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+
+    scroll-behavior: smooth;
+
+}
+img{
+    height: 300px;
+}
+span{
+    color: #00b2c5;
+}
+button{
+    border: 2px solid #00b2c5;
+    background-color: transparent;
+    color: #fff;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #0d2327;
+    color: white ;
+
+    position: relative;
+    
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    border-radius: 5px;
+    background-color: rgba(75, 73, 73, 0.484);
+    color:#fff;
+}
+
+.home{
+    height: 90vh;
+}
+.logo{
+
+    height: 30px;
+    width: 80px;
+}
+.font-size{
+    font-size: 30px;
+}
+.j-cheraecter{
+    color: #00b2c5;
+    position: relative;
+}
+.j-crical{
+    position: absolute;
+
+    height: 13px;
+    width: 13px;
+
+
+
+    border: 2.5px solid gold;
+    border-radius: 50%;
+    border-style: dotted;
+
+    top: -3px;
+    left: 0px;
+
+    animation: spindiv 5s linear infinite;
+}
+@keyframes spindiv {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+/* first img  */
+
+.imgshowd{
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px #85838380;
+}
+
+/* What i can do */
+.Title-icone{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.Title-icone div{
+height: 30px;
+width: 30px;
+
+margin-right: 5px;
+margin-top: 5px;
+
+text-align: center;
+
+}
+.heighweightset{
+    width: 500px;
+    margin: 10px;
+}
+.heighweightset a:hover{
+    background-color: black
+}
+
+
+
+/*  skill ans tecnology */
+
+
+
+.skill-add{
+    height: 45px;
+    width: 150px;
+
+    margin: 5px;
+    padding: 7px;
+
+    text-align: center;
+    align-items: center;
+
+    /* background-color: antiquewhite; */
+
+    border: 2px solid brown;
+    border-radius: 10px;
+
+}
+.skill-languages-img{
+    height: 40px;
+    width: 40px;
+    float: left;
+}
+
+.skill-languages-img img {
+    height: 25px;
+    /* width: 50px; */
+}
+
+.project-img{
+    height: 200px ;
+    width: 100%;
+    background-color: aqua;
+}
+.project-img img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+/* mouse mouve */
+
+
+
+.trail{
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50px;
+    
+    background-color: gold;
+    position: fixed;
+    animation: come 0.5s linear forwards ;
+}
+@keyframes come {
+    0%{
+        transform: scale(0);
+    }
+    10%{
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+        width: 5px;
+        height: 5px;
+    }
+    100%{
+        transform: scale(1) translateY(10px);
+        opacity: 0;
+    }
+}
+
+
+/*  back ground email  */
+.first-screen-part video{
+
+    position: absolute;
+
+    /* width: 100%; */
+    height: 100%;
+
+    z-index: -1;
+    top: 0px;
+    bottom: 0px;
+
+    overflow-x: hidden;
+}
+
+/* add email concate  */
+
+.concetEmailid{
+    top: 17%;
+    right: -10px;
+    position: absolute;
+    transform: rotate(90deg);
+}
+.setposigon{
+    position: relative;
+}
+.bubbleup{
+    height: 10px;
+    width: 10px;
+    background-color: #00b2c5;
+    position: absolute;
+    right: 300px;
+    top: 10px;
+    animation: updown 5s alternate infinite ;
+    border-radius: 1px;
+}
+@keyframes updown {
+    0%{
+       left: -210px; 
+       transform: rotate(90deg);
+    }
+    
+    100%{
+       left: -17px;
+       transform: rotate(-360deg);
+    }
+}
+
+
+/*   contact      */
+
+.contact-information{
+    height: auto;
+    width: 270px;
+    padding: 15px 5px 5px 5px;
+    margin: 5px;
+    /* background-color: #fff; */
+
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
